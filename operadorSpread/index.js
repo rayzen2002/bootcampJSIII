@@ -1,4 +1,4 @@
-const person = ['lixo', 'feia', 'nojenta', 'mentirosa', 'falsa', 'burra']
+const person = ['qualidade1', 'qualidade2', 'qualidade3']
 const personClone = [...person]
 
 console.log(personClone)
