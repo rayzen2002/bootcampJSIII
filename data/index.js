@@ -4,7 +4,7 @@ const data = date => {
   //.format('DD/MM/YYYY')
   var now = dayjs()
   const treatedDate = dayjs(date)
-  const age = now.year() - treatedDate.year()
+  const age = now.diff(treatedDate, 'year')
   const birthDay = treatedDate.add(age + 1, 'year')
   const daysLeft = birthDay.diff(now, 'day')
 
@@ -15,3 +15,4 @@ const data = date => {
   console.log(`Faltam ${daysLeft} dias para seu aniversario`)
 }
 console.log(data('12-18-1996'))
+console.log(`Antonia ${data('03-04-1999')}`)
